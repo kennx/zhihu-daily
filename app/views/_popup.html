@@ -1,0 +1,23 @@
+<div class="articles">
+    <header class="head">
+        <div class="date">{{data.date}}</div>
+        <div class="date-control">
+            <div class="prev">
+                <span ng-click="prevDay()"><i></i>前一天</span>
+            </div>
+            <div class="next" ng-hide="isToday()">
+                <span ng-click="nextDay()">后一天<i></i></span>
+            </div>
+        </div>
+    </header>
+    <article class="entry" ng-repeat="story in data.stories">
+        <a ng-href="{{story.share_url}}" target="_blank" class="clearfix">
+            <figure>
+                <img ng-src="{{story.images[0]}}">
+            </figure>
+            <h1 class="title">
+                {{story.title}}
+            </h1>
+        </a>
+    </article>
+</div>

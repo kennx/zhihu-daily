@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url("../fonts/OpenSans.woff") format("woff")
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url("../fonts/roboto-thin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body {background-color: #FFF; padding: 0; margin: 0; color: #414243; font-family: Avenir, Open Sans, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif; }
+h1,h2,h3,h4 {padding: 0; margin: 0; font-weight: 400;}
+cite, em, i {font-style: normal;}
+ul, ol, dl {list-style: none; padding: 0; margin: 0;}
+p,dd,dt {padding: 0; margin: 0;}
+a {color: #414243;text-decoration: none;}
+:focus {outline: 0;}
+button {cursor: pointer;}
+table {border-collapse: collapse;}
+img {border: 0;}
+embed {display: inline-block;}
+input,textarea,button { padding: 0; margin: 0; -webkit-appearance:none; }
+
+
+
+.clearfix:before, .clearfix:after{
+  content:"";
+  display:table;
+}
+
+.clearfix:after{
+  clear:both
+}
+
+.clearfix{
+  zoom:1
+}
+
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide {
+  display: none !important;
+}
+
+ng\:form {
+  display: block;
+}

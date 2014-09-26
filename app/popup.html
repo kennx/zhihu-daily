@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="ZhiHuDaily" ng-csp="">
+<head>
+    <meta charset="UTF-8">
+    <title>知乎日报 for chrome extenstion</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/popup.css" />
+</head>
+<body>
+
+	<div class="loading" loading>
+		加载中...
+	</div>
+
+    <main class="popup-mian">
+        <div ng-controller="PopupCtrl">
+            <div class="ng-view"></div>
+        </div>
+    </main>
+
+<script type="text/javascript" src="/lib/vendor/jquery.min.js"></script>
+<script type="text/javascript" src="/lib/vendor/angular.min.js"></script>
+<script type="text/javascript" src="/lib/vendor/angular-route.min.js"></script>
+<script type="text/javascript" src="/assets/js/services.js"></script>
+<script type="text/javascript" src="/assets/js/directives.js"></script>
+<script type="text/javascript" src="/assets/js/popup-ctrl.js"></script>
+</body>
+</html>
